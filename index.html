@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Bus</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main1.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="js/wow.min.js"></script>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script>
+        new WOW().init();
+
+    </script>
+
+    <!-- Jquery   -->
+    <script type="text/javascript">
+        $(function() {
+            $("#datepicker").datepicker();
+        });
+        $(function() {
+            $("#datepicker1").datepicker();
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar st-navbar navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="logo" href="index.html">My Bus</a>
+                </div>
+
+                <div class="navbar navbar-collapse" id="st-navba-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html">HOME</a></li>
+                        <li>
+                            <a href="#contact">CONTACT</a>
+                        </li>
+                        <li>
+                            <a href="login.html">LOG IN</a>
+                        </li>
+                         <li>
+                            <a href="ac.html">SIGN UP</a>
+                        </li>
+
+                        <li>
+                            <a href="#team">TEAM</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HEADER  -->
+
+    <!--  SLIDER  -->
+
+    <h1 align="center">My Bus</h1>
+    <form action="busresult.php" method="post">
+        <section id="search">
+            <div class="container">
+                <h1>Lets Start Your Journey With US</h1>
+                <h2>Search for Bus</h2>
+                <div class="searchbox">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="input-group  wow fadeInLeft" data-wow-delay="1.2s">
+                                <span class="input-group-addon" id="#sizing-addon1"><i class="fa fa-map-marker place"></i></span>
+                                <input type="text" name="From" placeholder="From" list="abc" class="form-control" area-describedby="sizing-addon1 required">
+                            </div>
+                        </div>
+
+                        <datalist id="abc">
+<option value="ahmedabad" />
+<option value="anand" />
+<option value="surat" />
+<option value="nadiad" />
+<option value="gandhinagar" />
+<option value="ankleshwar" />
+<option value="bharuch" />
+<option value="rajkot" />
+<option value="gondal" />
+<option value="mumbai" />
+<option value="baroda" />
+
+</datalist>
+                        <div class="col-md-12">
+                            <div class="input-group   wow fadeInLeft" data-wow-delay="1.6s">
+                                <span class="input-group-addon" id="#sizing-addon1"><i class="fa fa-map-marker place" aria-hidden="true"></i></span>
+                                <input type="text" name="To" placeholder="To" list="to" class="form-control" area-describedby="sizing-addon1" required>
+                            </div>
+                        </div>
+
+                        <datalist id="to">
+<option value="ahmedabad" />
+<option value="anand" />
+<option value="surat" />
+<option value="nadiad" />
+<option value="gandhinagar" />
+<option value="ankleshwar" />
+<option value="bharuch" />
+<option value="rajkot" />
+<option value="gondal" />
+<option value="mumbai" />
+<option value="baroda" />
+
+</datalist>
+
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <div class="col-md-6">
+                                    <div class="input-group wow fadeInUp" data-wow-delay="2.0s">
+                                        <span class="input-group-addon" id="#sizing-addon1"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                        <input type="text" id="datepicker" name="Date" placeholder="Date of Journey" area-describedby="sizing-addon1" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn btn-lg wow fadeInUp" data-wow-delay="2.4s" type="submit">Submit</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+    <!--  Team   -->
+
+    <section id="team" class="team">
+        <div class="container">
+            <div class="row">
+                <h2></h2>
+                <h2>Meet The team</h2>
+                <div class="team-member">
+                    <div class="col-md-3 col-lg-3">
+                        <div class="member">
+                            <div class="member-image">
+                                <img class="img-responsive" src="images/nakul_.PNG" alt="">
+                            </div>
+                            <div class="member-info">
+                                <h3>Nakul Sahayata</h3>
+                                <h4>CEO &amp;Developer</h4>
+                            </div>
+                            <div class="social-icons">
+                                <ul>
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-lg-3">
+                        <div class="member">
+                            <div class="member-image">
+                                <img class="img-responsive" src="images/dhrumil.PNG" alt="">
+                            </div>
+                            <div class="member-info">
+                                <h3>Dhrumil Shah</h3>
+                                <h4>CTO &amp;Developer</h4>
+                            </div>
+                            <div class="social-icons">
+                                <ul>
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <div class="member">
+                            <div class="member-image">
+                                <img class="img-responsive" src="images/bhautik.jpeg" alt="">
+                            </div>
+                            <div class="member-info">
+                                <h3>Bhautik</h3>
+                                <h4>Designer</h4>
+                            </div>
+                            <div class="social-icons">
+                                <ul>
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-lg-3">
+                        <div class="member">
+                            <div class="member-image">
+                                <img class="img-responsive" src="images/dhaval.PNG" alt="">
+                            </div>
+                            <div class="member-info">
+                                <h3>Dhaval Shah</h3>
+                                <h4>Project Manager &amp; Designer</h4>
+                            </div>
+                            <div class="social-icons">
+                                <ul>
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Team  -->
+    <!--  Contact Us  -->
+    <form action="contact.html" method="post">
+    <div class="contact" id="contact">
+        <div class="container contact-search-box">
+            <div class="row">
+                <h2 class="wow fadeInUp">Contact</h2>
+                <p class="wow fadeInUP" data-wow-delay="0.4s">We are here to answer Your all question about My BuS Reach out to us and we will respond as soon as possible </p>
+                <div class="col-md-6 col-lg-6">
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s">
+                        <span class="input-group-addon" id="#sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <input type="text" class="form-control" area-describedby="sizing-addon1" placeholder="FullName" name="fname">
+                    </div>
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.2s">
+                        <span class="input-group-addon" id="#sizing-addon1"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <input type="text" class="form-control" area-describedby="sizing-addon1" placeholder="email" name="email">
+                    </div>
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.6">
+                        <span class="input-group-addon" id="#sizing-addon1"><i class="fa fa-phone" aria-hidden="true"></i></span>
+
+                        <input type="text" class="form-control" area-describedby="sizing-addon1" name="phno" placeholder="Phone Number">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6" data-wow-delay="2s">
+                    <div class="input-group wow fadeInUp">
+                        <textarea name="message" placeholder="Please Type your message" id="" cols="80" rows="6" class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg wow fadeInUp" data-wow-delay="2.4s">Submit Your Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+</body>
+
+</html>

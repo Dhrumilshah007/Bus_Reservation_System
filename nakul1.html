@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Page Title</title>
+    <style>
+        
+        .topnav {
+  overflow: hidden;
+  background-color:#639BF1;
+}
+.name {
+    background-color:#77BA9B;
+    width: 180px;
+    height: 25px;
+    border: 2px solid #639BF1;
+    padding: 15px;
+    }
+.phone{
+    background-color:#77BA9B ;
+    width: 180px;
+    height: 25px;
+    border: 2px solid #639BF1;
+    padding: 15px;
+   }
+.email{
+	background-color:#77BA9B ;
+    width: 180px;
+    height: 25px;
+    border: 2px solid #639BF1;
+    padding: 15px;
+   
+}
+.comm{
+	background-color:#77BA9B ;
+    width: 350px;
+    height: 130px;
+    border: 2px solid #639BF1;
+    padding: 15px;
+   
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:darkorange;
+  color:black;
+}
+
+.topnav a.active {
+    background-color:lawngreen;
+    color: white;
+}
+    </style>
+</head>
+
+<body style="background-color:#3B5998;">
+<h1 align="center">My Bus</h1>
+<div class="topnav" style="width:100%">
+<a href="login.html">Log In</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="index.html">Home</a>
+
+</div>
+<br>
+<h1>Bus Reservation System</h1>
+<form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+return true; }
+</script>
+<table style="width:550px;border:0;" cellpadding="8" cellspacing="0">
+<tr> <td>
+<label for="Name">Name:</label>
+</td> <td>
+<div class="name">
+<input name="Name" type="text" maxlength="60">
+</td> </tr> <tr> <td></div>
+<label for="PhoneNumber">Phone number:</label>
+</td> <td>
+<div class="phone">
+<input name="PhoneNumber" type="text" maxlength="43"  />
+</td> </tr> <tr> <td>
+</div>
+<label for="FromEmailAddress">Email address:</label>
+</td> <td>
+<div class="email">
+<input name="FromEmailAddress" type="text" maxlength="90" />
+</td> </tr> <tr> <td></div>
+
+<label for="Comments">Comments:</label>
+</td> <td></div>
+<div class="comm">
+<textarea name="Comments" rows="7" cols="40"></textarea>
+</td> </tr> <tr> <td>
+</td> <td>
+<input name="skip_Submit" type="submit" value="Submit" />
+</td> </tr>
+</table>
+</form>
+</body>
+</html>

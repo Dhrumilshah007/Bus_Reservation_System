@@ -1,0 +1,126 @@
+<html>
+<head>
+<style>
+.from {
+    background-color:#77BA9B;
+    width: 180px;
+    height: 25px;
+    border: 2px solid #639BF1;
+    padding: 15px;
+    margin-top: 250px;
+    margin-left: 200px;
+    float: left;
+}
+.to{
+    background-color:#77BA9B ;
+    width: 180px;
+    height: 25px;
+    border: 2px solid #639BF1;
+    padding: 15px;
+    margin-top: 250px;
+    margin-left: 20px;
+    float: left;
+}
+.sub{
+	background-color:#77BA9B ;
+    width: 150px;
+    height: 25px;
+    border: 2px solid #639BF1;
+    padding: 15px;
+    margin-top: 250px;
+    margin-left: 20px;
+    float: left;
+
+}
+.dat{
+	background-color:#77BA9B ;
+    width: 150px;
+    height: 25px;
+    border: 2px solid #639BF1;
+    padding: 15px;
+    margin-top: 250px;
+    margin-left: 20px;
+    float: left;
+
+}
+.topnav {
+  overflow: hidden;
+  background-color:#639BF1;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:darkorange;
+  color:black;
+}
+
+.topnav a.active {
+    background-color:lawngreen;
+    color: white;
+}
+</style>
+
+</head>
+<body style="background-color: #3B5998;" >
+<h1 align="center">My Bus</h1>
+<div class="topnav" style="width:100%">
+<a href="login.html">Log In</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="index.html">Home</a>
+
+</div>
+<form action="busresult.php" method="post">
+	<div class="from">
+	<input type="text" name="From" placeholder="FROM" list="abc" required>
+        <datalist id="abc">
+<option value="ahmedabad" />
+<option value="anand" />
+<option value="surat" />
+<option value="nadiad" />
+<option value="gandhinagar" />
+<option value="ankleshwar" />
+<option value="bharuch" />
+<option value="rajkot" />
+<option value="gondal" />
+<option value="mumbai" />
+<option value="baroda" />
+
+</datalist>
+		</div>
+	<div class="to">
+	<input type="text" name="To" placeholder="TO" list="to" required>
+        <datalist id="to">
+<option value="ahmedabad" />
+<option value="anand" />
+<option value="surat" />
+<option value="nadiad" />
+<option value="gandhinagar" />
+<option value="ankleshwar" />
+<option value="bharuch" />
+<option value="rajkot" />
+<option value="gondal" />
+<option value="mumbai" />
+<option value="baroda" />
+
+</datalist>
+		</div>
+		<div class="dat">
+	<input type="date" name="Date"  placeholder="Date of Journey" required>
+		</div>
+
+	<div class="sub">
+	<input type="submit" value="submit" style="width: 100px">
+		</div>
+		</form>
+
+</body>

@@ -1,0 +1,546 @@
+@import url("http://fonts.googleapis.com/css?family=Raleway:200,300,600,700&subset=latin,latin-ext");
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 1.7857;
+    color: #333333;
+    background-color: #fff;
+}
+
+a {
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #000;
+}
+
+a,
+a:hover,
+a:active,
+a:focus,
+button:focus {
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/*   Header   */
+
+#header {}
+
+#header .navbar {
+    min-height: 80px;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.st-navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.st-navbar ul {
+    margin-top: 15px;
+}
+
+.st-navbar ul li a {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0;
+    margin: 14px;
+}
+
+.st-navbar ul li a:hover,
+.st-navbar ul li a:focus {
+    background-color: transparent;
+    color: black;
+}
+
+.st-navbar .navbar-header {
+    margin-top: 25px;
+}
+
+.st-navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+
+.st-navbar .navbar-toggle {
+    margin-top: 7px;
+    margin-right: 25px;
+    padding: 0;
+    border-radius: 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+/* 5. SEARCH */
+
+#search {
+    width: 100%;
+    height: 100%;
+}
+
+#searchforac {
+    width: 100%;
+    height: 130%;
+}
+
+#search:before {
+    background-image: url(../images/back.jpg);
+    content: " ";
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#searchforac:before {
+    background-image: url(../images/back.jpg);
+    content: " ";
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#search .container {
+    position: relative;
+    left: 25px;
+}
+
+.container h1 {
+    margin-top: 100px;
+    margin-left: 250px;
+    margin-bottom: 15px;
+    font-size: 25px !important;
+    color: #fff;
+}
+
+.container h2 {
+    margin-left: 250px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.searchbox {
+    margin-top: 15px;
+    margin-left: 250px !important;
+}
+
+.col-md-6 {
+    width: 360px;
+}
+
+datalist {
+    color: gray;
+}
+
+.searchbox input[name="To"] {
+    color: black;
+    font-weight: 600;
+    border: 1px solid #E8E8E8;
+    padding: 20px 14px;
+    width: 500px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.searchbox input[name="From"] {
+    color: black;
+    font-weight: 600;
+    border: 1px solid #E8E8E8;
+    padding: 20px 14px;
+    width: 500px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.searchbox input[name="doj"] {
+    color: black;
+    font-weight: 600;
+    border: 1px solid #E8E8E8;
+    padding: 20px 14px;
+    width: 340px !important;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.searchbox input[name="Date"] {
+    color: black;
+    font-weight: 600;
+    border: 1px solid #E8E8E8;
+    padding: 20px 14px;
+    width: 240px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.searchbox input[name="username"] {
+    color: black;
+    font-weight: 600;
+    border: 1px solid #E8E8E8;
+    padding: 20px 14px;
+    width: 500px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.searchbox input[name="password"] {
+    color: black;
+    font-weight: 600;
+    border: 1px solid #E8E8E8;
+    padding: 20px 14px;
+    width: 500px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.searchbox input[name="firstname"] {
+    color: black;
+    font-weight: 600;
+    border: 1px solid #E8E8E8;
+    padding: 20px 14px;
+    width: 300px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.searchbox input[name="lastname"] {
+    color: black;
+    font-weight: 600;
+    border: 1px solid #E8E8E8;
+    padding: 20px 14px;
+    width: 300px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.searchbox input[name="user_name"] {
+    color: black;
+    font-weight: 600;
+    border: 1px solid #E8E8E8;
+    padding: 20px 14px;
+    width: 300px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.searchbox input[id="txtpassword"] {
+    color: black;
+    font-weight: 600;
+    border: 1px solid #E8E8E8;
+    padding: 20px 14px;
+    width: 300px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.searchbox input[id="txtconfirmpassword"] {
+    color: black;
+    font-weight: 600;
+    border: 1px solid #E8E8E8;
+    padding: 20px 14px;
+    width: 300px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    color: white;
+    font-size: 19px;
+}
+
+legend {
+    color: #fff;
+    font-weight: 900;
+}
+
+input[type=radio],
+input.radio {
+    margin-right: 15px;
+}
+
+.searchbox input[name="email"] {
+    color: black;
+    font-weight: 600;
+    border: 1px solid #E8E8E8;
+    padding: 20px 14px;
+    width: 350px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.searchbox input[name="address"] {
+    color: black;
+    font-weight: 600;
+    border: 1px solid #E8E8E8;
+    padding: 20px 14px;
+    width: 300px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.searchbox input[name="mobile_number"] {
+    color: black;
+    font-weight: 600;
+    border: 1px solid #E8E8E8;
+    padding: 20px 14px;
+    width: 250px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group .form-control {
+    margin: 0px !important;
+}
+
+.searchbox .btn:hover {
+    transform: scale(1.09);
+    transition: all ease-in-out 0.5s;
+    background-color: darkkhaki;
+}
+
+
+/*  --   Team   --   */
+
+.team {
+    height: 100%;
+    color: #000;
+    padding-top: 0px;
+    background-color: #f6f6f6;
+    margin-top: 140px;
+}
+
+.team .container .row h2 {
+    text-align: center;
+}
+
+.team-members {
+    margin-bottom: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-icons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.social-icons ul li {
+    float: left;
+    margin-right: 8px;
+}
+
+.social-icons ul li:last-child {
+    margin-right: 0;
+}
+
+.social-icons ul li a {
+    color: #fff;
+    background-color: #d9d9d9;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    display: block;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.social-icons ul li a:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.team-member {
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+}
+
+.team-member:hover .social-icons ul li a.facebook {
+    background-color: #3b5999;
+}
+
+.team-member:hover .social-icons ul li a.twitter {
+    background-color: #2ac6f7;
+}
+
+.team-member:hover .social-icons ul li a.linkedin {
+    background-color: #036dc0;
+}
+
+#team .img-responsive {
+    margin-top: 20px;
+    width: 100%;
+    height: 220px;
+}
+
+.member {
+    height: 430px;
+    background-color: #43484E;
+    border: 1px solid #43484E;
+    color: #f6f6f6;
+    padding: 25px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.team h2 {
+    margin: 90px auto 70px;
+    color: #000;
+}
+
+.member-info h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.member-info h4 {
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: #999;
+    text-transform: capitalize;
+}
+
+
+/*  Contact  Us  */
+
+.contact {
+    padding: 50px 0 80px;
+    text-align: center;
+    height: 90%;
+}
+
+.contact p {
+    padding-bottom: 80px;
+    color: #737373;
+    font-size: 20px;
+}
+
+.contact h2 {
+    color: #4c4c4c;
+    margin: 20px 0 20px;
+}
+
+.contact .input-group {
+    margin-bottom: 25px;
+}
+
+.contact .form-control {
+    border-radius: 0 !important;
+}
+
+.contact span {
+    border-radius: 0 !important;
+}
+
+.contact .btn {
+    border-radius: 0 !important;
+    width: 100%;
+    font-size: 25px;
+    background-color: #f08080;
+    color: white;
+}
+
+.contact .btn:hover {
+    background-color: #a85959 !important;
+    color: #fff !important;
+}
+
+.contact-search-box input[name="fname"] {
+    color: black;
+    font-weight: 600;
+    border: 1px solid #E8E8E8;
+    padding: 20px 14px;
+    width: 440px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact-search-box input[name="email"] {
+    color: black;
+    font-weight: 600;
+    border: 1px solid #E8E8E8;
+    padding: 20px 14px;
+    width: 440px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact-search-box input[name="phno"] {
+    color: black;
+    font-weight: 600;
+    border: 1px solid #E8E8E8;
+    padding: 20px 14px;
+    width: 440px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact-search-box input[name="phno"] {
+    color: black;
+    font-weight: 600;
+    border: 1px solid #E8E8E8;
+    padding: 20px 14px;
+    width: 440px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact-search-box .col-lg-6 {
+    width: 550px;
+}
+
+
+/*  Contact  Us   */
